@@ -1,0 +1,19 @@
+.link-menu {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .link-menu:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .link-menu.active {
+    background-color: #007bff;
+  }
+
+  img {
+    width: 70px;
+    margin-bottom: 20px;
+  }
+

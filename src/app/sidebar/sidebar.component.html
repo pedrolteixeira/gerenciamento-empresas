@@ -1,0 +1,36 @@
+<div class="d-flex" style="height: 100vh;">
+  <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+    <div class="d-flex align-items-center justify-content-center mb-2"> <!-- Reduzi a margem inferior para mb-2 -->
+      <img src="../../assets/icons/company.png">
+    </div>
+
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link link-menu">
+          Página Inicial
+        </a>
+      </li>
+      <li>
+        <a routerLink="/funcionarios" routerLinkActive="active" class="nav-link link-menu text-white">
+          Funcionários
+        </a>
+      </li>
+      <li>
+        <a routerLink="/produtos" routerLinkActive="active" class="nav-link link-menu text-white">
+          Produtos
+        </a>
+      </li>
+      <li>
+        <a routerLink="/clientes" routerLinkActive="active" class="nav-link link-menu text-white">
+          Clientes
+        </a>
+      </li>
+    </ul>
+    <hr>
+    <!-- Dropdown menu do usuário (se necessário) -->
+  </div>
+  <div class="flex-grow-1 p-3">
+    <!-- O conteúdo da página selecionada será renderizado aqui -->
+    <router-outlet></router-outlet>
+  </div>
+</div>

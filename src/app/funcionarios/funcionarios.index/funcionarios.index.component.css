@@ -1,0 +1,20 @@
+.funcionarios-table {
+    margin-top: 60px;
+}
+
+
+h2 {
+    color: rgb(63, 63, 63);
+}
+
+.criar-button {
+    border-radius: 20px;
+}
+
+
+.tabela-vazia {
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid gray;
+    display: flex; /* Permite definir uma largura à div (se necessário) */
+}

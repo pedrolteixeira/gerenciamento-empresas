@@ -1,0 +1,23 @@
+<h2>Adicionar Produto</h2>
+
+<form class="row g-3" (ngSubmit)="salvar()" autocomplete="off">
+    <div class="alert alert-danger col-md-12" role="alert" *ngIf="temErro">
+      Alguns campos do formulário apresentam erro
+    </div>
+    <div class="col-md-6">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="formData.nome">
+    </div>
+    <div class="col-md-6">
+      <label for="quantidade" class="form-label">Quantidade</label>
+      <input type="number" class="form-control" id="quantidade" name="quantidade" [(ngModel)]="formData.quantidade">
+    </div>
+    <div class="col-6">
+      <label for="valor" class="form-label">Valor Unidade</label>
+      <input type="float" class="form-control" id="valor" name="valor" [(ngModel)]="formData.valor">
+    </div>
+    <div class="col-md-12">
+      <button class="btn btn-primary" type="submit">Adicionar</button>
+      <button class="btn btn-danger ml-1" type="button" (click)="cancelar()">Cancelar</button>
+    </div>
+</form>

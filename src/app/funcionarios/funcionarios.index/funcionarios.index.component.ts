@@ -13,7 +13,6 @@ export class FuncionariosIndexComponent {
   constructor(private funcionariosService: FuncionariosService, private router: Router) {}
 
   ngOnInit(): void {
-    // Obter a lista de funcionários do serviço
     this.funcionarios = this.funcionariosService.obterFuncionarios();
   }
 

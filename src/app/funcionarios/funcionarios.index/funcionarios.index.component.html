@@ -24,8 +24,7 @@
         <tr *ngFor="let funcionario of funcionarios">
           <td>{{ funcionario.nomecompleto }}</td>
           <td>{{ funcionario.cpf }}</td>
-          <td>{{ funcionario.dataNascimento }}</td>
-          <!-- Botão de excluir no final da linha -->
+          <td> {{ funcionario.dataNascimento }}</td>
           <td class="text-end">
             <button type="button" class="btn btn-danger excluir-button" (click)="excluirFuncionario(funcionario)">Excluir</button>
           </td>

@@ -16,11 +16,13 @@ export class FuncionariosNewComponent {
     private router: Router
     ) {}
 
-  submitForm() {
-    // Adicionar funcionário ao serviço
+  salvar() {
     this.funcionariosService.adicionarFuncionario(this.formData);
-    // Limpar o formulário após adicionar o funcionário
     this.formData = {};
+    this.router.navigate(['/funcionarios']);
+  }
+
+  cancelar() {
     this.router.navigate(['/funcionarios']);
   }
 
@@ -38,7 +40,6 @@ export class FuncionariosNewComponent {
         this.formData.cidade = data.localidade;
         this.formData.estado = data.uf;
         this.temErro = false;
-        // Outros campos do formulário podem ser atualizados aqui também
       },
       (error : any) => {
         if (this.formData.cep) {

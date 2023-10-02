@@ -1,6 +1,6 @@
 <h2>Adicionar Funcionário</h2>
 
-<form class="row g-3" (ngSubmit)="submitForm()" autocomplete="off">
+<form class="row g-3" (ngSubmit)="salvar()" autocomplete="off">
     <div class="alert alert-danger col-md-12" role="alert" *ngIf="temErro">
       Alguns campos do formulário apresentam erro
     </div>
@@ -38,6 +38,6 @@
     </div>
     <div class="col-md-6">
       <button class="btn btn-primary" type="submit">Adicionar</button>
+      <button class="btn btn-danger ml-1" type="button" (click)="cancelar()">Cancelar</button>
     </div>
-
   </form>
